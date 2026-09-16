@@ -11,4 +11,4 @@ echo "Python & Git setup complete."
 echo "Starting noVNC setup:"
 
 sudo apt-get update
-sudo apt-get install -y novnc websockify
+sudo apt-get install -y fluxbox novnc tigervnc-standalone-server websockify
