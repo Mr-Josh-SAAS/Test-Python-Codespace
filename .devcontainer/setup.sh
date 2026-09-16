@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
+echo "Begin Python & Git setup:"
 
 git config --global alias.lola "log --oneline --graph -20 --all"
 
-rm .git/hooks/pre-push
-
 pip install --upgrade pip
-pip install --user -r ./devcontainer/requirements.txt
+pip install --user -r .devcontainer/requirements.txt
 
-echo "Python setup complete."
+echo "Python & Git setup complete."
