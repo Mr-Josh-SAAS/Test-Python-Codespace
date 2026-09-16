@@ -13,3 +13,5 @@ echo "Starting view window setup:"
 sudo apt-get update
 sudo apt-get install -y fluxbox novnc tigervnc-standalone-server websockify
 sudo cp .devcontainer/novnc-index.html /usr/share/novnc/index.html
+
+echo "View window setup complete"
