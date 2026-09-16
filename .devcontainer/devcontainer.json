@@ -2,6 +2,7 @@
     "name": "Python Codespace",
     "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
     "postCreateCommand": "bash .devcontainer/setup.sh",
+    "postStartCommand": "setsid /usr/share/novnc/utils/novnc_proxy --vnc localhost:5901 --listen 0.0.0.0:6080 </dev/null >/tmp/novnc.log 2>&1 &",
     "forwardPorts": [6080],
     "portsAttributes": {
         "6080": {
