@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+git config --global alias.lola "log --oneline --graph -20 --all"
 
-echo "Codespace setup complete."
+pip install --upgrade pip
+pip install --user -r ./devcontainer/requirements.txt
+
+echo "Python setup complete."
