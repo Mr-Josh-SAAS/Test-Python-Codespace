@@ -10,6 +10,6 @@ echo "Python & Git setup complete."
 
 echo "Starting noVNC setup:"
 
-sudo apt-get update 
+sudo apt-get update
 sudo apt-get install -y novnc websockify
-novnc_proxy --vnc localhost:5901 --listen 0.0.0.0:6080
+/usr/share/novnc/utils/novnc_proxy --vnc localhost:5901 --listen 0.0.0.0:6080 >/tmp/novnc.log 2>&1 &
