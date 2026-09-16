@@ -8,7 +8,7 @@ pip install --user -r .devcontainer/requirements.txt
 
 echo "Python & Git setup complete."
 
-echo "Starting noVNC setup:"
+echo "Starting view window setup:"
 
 sudo apt-get update
 sudo apt-get install -y fluxbox novnc tigervnc-standalone-server websockify
