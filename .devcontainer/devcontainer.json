@@ -10,7 +10,7 @@
     "portsAttributes": {
         "6080": {
             "label": "noVNC",
-            "onAutoForward": "notify"
+            "onAutoForward": "openBrowser"
         }
     }
 }
